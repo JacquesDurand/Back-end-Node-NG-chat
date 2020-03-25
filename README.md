@@ -75,3 +75,5 @@ $ npm start
 ```
 
 ## Go Get and install the Front-end !
+
+You can just do that [here](https://github.com/JacquesDurand/Front-end-Node-Ng-Chat)
