@@ -9,7 +9,7 @@ Hello and Welcome to the back-end part of my first and ongoing Node/Angular chat
 - Once you are in the project folder in your computer :
 
 ```bash
-npm install
+$ npm install
 ```
 
 It will install all the dependencies needed to run this NodeJs API and the socket server
@@ -17,7 +17,7 @@ Do take note that in this project, i am using MySql as my chosen database, and S
 If you wish to use MariaDB or PostGreSql, a few tweaks might be needed, such as 
 
 ```bash
-npm install pg 
+$ npm install pg 
 ```
 for PostgreSql e.g
 
@@ -43,25 +43,35 @@ Now that you have everything ready (I hope), you will have to run some migration
 had some issues with Sequelize automatic model synchronisation, so while I work on that, the best way to get started is :
 
 ```bash
-sequelize db:create
+$ sequelize db:create
 ```
- ( Or ``node_modules/.bin/sequelize db:create`` if you don't have it installed globally).It Will create you DB. Check on phpMyAdmin
+ ( Or ``$ node_modules/.bin/sequelize db:create`` if you don't have it installed globally).It Will create you DB. Check on phpMyAdmin
 or directly in your terminal via 
 ```bash
-mysql -u Your_user_name -p
+$ mysql -u Your_user_name -p
 ```
 Then to migrate : 
 
 ```bash
-sequelize db:migrate
+$ sequelize db:migrate
 ```
-(Or ``node_modules/.bin/sequelize db:migrate``)
+(Or ``$ node_modules/.bin/sequelize db:migrate``)
+
+## Create a .env file with your private JsonWebToken Key 
+
+At the root of your directory :
+
+```bash
+$ sudo vim .env
+```
+
+Add   _**JWT_KEY=your_very_complex_key**_    to it 
 
 ## Start the server 
 Now you can start your server ! 
 
 ```bash
-npm start
+$ npm start
 ```
 
 ## Go Get and install the Front-end !
